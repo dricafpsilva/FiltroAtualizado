@@ -2,6 +2,9 @@
 import { Form, Label, Input } from "reactstrap";
 import BarraMenu from "./barramenu";
 
+function redirecionarPagina() {
+    window.location.href = "resultado"
+}
 export default function Pesquisa (){
 
 return(
@@ -90,10 +93,8 @@ return(
                 </div>
              </div>
              <br/>
-             <input class="button-pesquisa" type="button" value="Pesquisar"></input>
-             
-             
-            
+             <input class="button-pesquisa"  type="button" value="Pesquisar" onClick={redirecionarPagina}></input>
+                   
         </Form>
           
         </body>
@@ -228,7 +229,7 @@ return(
                 </div>
              
             <br/>
-            <input class="button-pesquisa" type="button" value="Pesquisar"></input>
+            <input class="button-pesquisa" type="button" value="Pesquisar" onClick={redirecionarPagina}></input>
         </Form>
         
         </body>
